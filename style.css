@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.faq-card{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 920px;
+    height: 509px;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 50px -20px rgb(53 18 122 / 50%);
+    border-radius: 23px;
+    
+    
+}
+.faq{
+    margin-bottom: 45px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #1E1F36;
+}
+
+.woman-img{
+    background-image: url('./images/illustration-woman-online-desktop.svg');
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    left: -30px;
+    top: 38px;
+    width: 104%;
+    z-index: 2;
+}
+.box-img{
+    position: absolute;
+    background-image: url('./images/illustration-box-desktop.svg');
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    top: 32%;
+    left: -10%;
+    z-index: 3;
+    
+}
+
+.shadow-img{
+    background: url('./images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 950px;
+    width: 980px;
+    background-size: cover;
+    left: -57%;
+    bottom: -30%;
+    
+}
+
+.side-right{
+  margin:30px
+}
+
+.qst-ans{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #E8E8EA;;
+}
+.answer{
+    display: none;
+}
+
+.qst{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 20px;
+    color: #4B4C5F;
+}
+.qst:hover{
+    color: #F47B56;
+    cursor: pointer;
+}
+.btn-dwn{
+    margin-left: 20px;
+    height: 8px;
+    width: 16px;
+    position: relative;
+    cursor: pointer;
+}
+.active .answer{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #787887;
+    display: block;
+    margin-bottom: 15px;
+}
+.active .qst{
+    font-weight: bold;
+    color: #1E1F36;
+}
+.active .btn-dwn{
+    transform: rotate(180deg);
+}
+@media screen and (min-width: 930px){
+    .faq-card{
+      
+    }
+}
