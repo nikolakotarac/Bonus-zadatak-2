@@ -12,5 +12,3 @@ questions.forEach((question) => {
         }
     })
 })
-
-

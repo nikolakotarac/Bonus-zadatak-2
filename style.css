@@ -59,7 +59,7 @@ body {
     width: 200px;
     top: 32%;
     left: -10%;
-    z-index: 3;
+    z-index: 2;
     
 }
 
@@ -70,13 +70,19 @@ body {
     height: 950px;
     width: 980px;
     background-size: cover;
-    left: -57%;
+    left: -116%;
     bottom: -30%;
+    z-index: 1;
     
 }
 
 .side-right{
   margin:30px
+}
+.side-left{
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 
 .qst-ans{
@@ -124,8 +130,56 @@ body {
 .active .btn-dwn{
     transform: rotate(180deg);
 }
-@media screen and (min-width: 930px){
-    .faq-card{
-      
+
+@media screen and (max-width: 919px){
+.faq-card{
+ width: 90%;
+ height: auto;
+grid-template-columns: 1fr 3fr;
+} 
+.side-left{
+ width: 299%;
+  height: auto;
+ overflow: visible;
+  margin: -61px auto;
+}
+
+.side-right{
+ margin-top: 50px;
+ margin-right: 50px;
+ }
+
+.woman-img{
+position: absolute;
+left: 74%;
+transform: translate(-50%, -60%);
+background: url('./images/illustration-woman-online-mobile.svg');
+background-repeat: no-repeat;
+width: 290px;
+ height: 180px
+} 
+.box-img{
+ display: none;
+}
+    .shadow-img{
+        position: absolute;
+        bottom: 96%;
+        left: 74%;
+        transform: translate(-50%, 100%);
+        background: url("./images/bg-pattern-mobile.svg");
+        background-repeat: no-repeat;
+        height: 105px;
+        width: 240px;
     }
+}
+@media screen and (max-width: 321px) {
+    body{
+        overflow: scroll;
+        background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    }
+    .container{
+        margin-bottom: 200px;
+        margin-top:200px;
+    }
+    
 }
